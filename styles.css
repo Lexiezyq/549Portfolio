@@ -1,0 +1,76 @@
+/* Video Background Styles */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Profile Image Styles */
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid var(--bs-light);
+}
+
+/* Social Links */
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Card Styles */
+.card {
+    background: rgba(33, 37, 41, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* AI Art Placeholder */
+.ai-art-placeholder img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+}
